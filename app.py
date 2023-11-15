@@ -155,15 +155,15 @@ if st.sidebar.button("Importera"):
                         ''', (doi, pmid, title, authors, journal, pub_year, citation_count, citation_dois))
                         conn.commit()
 
-                        st.sidebar.success(f"Information for PMID {pmid} retrieved and saved successfully!")
+                        st.sidebar.success(f"Din artikel med PMID {pmid} har lagts till och sparats!")
                     else:
-                        st.sidebar.error(f"Failed to fetch citation data for DOI {doi}")
+                        st.sidebar.error(f"Hittade inte DOI data {doi}")
                 else:
-                    st.sidebar.warning(f"DOI not available for PMID {pmid}")
+                    st.sidebar.warning(f"DOI saknas för PMID {pmid}")
             else:
-                st.sidebar.warning(f"No data found for PMID {pmid}")
+                st.sidebar.warning(f"Inget PMID hittades: {pmid}")
         except Exception as e:
-            st.sidebar.error(f"An error occurred: {e}")
+            st.sidebar.error(f"Ett fel inträffade: {e}")
 
 
 st.write('\n')
