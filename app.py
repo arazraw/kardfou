@@ -20,6 +20,8 @@ hide_menu_style = """
         #MainMenu {visibility: hidden;}
         #GithubIcon {visibility: hidden;}
         footer {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
