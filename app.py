@@ -223,7 +223,7 @@ else:
 st.subheader("Antal publikationer per författare")
 
 # Checkbox to apply filter
-apply_filter = st.checkbox("Visa endast Kardiologen")
+apply_filter = st.checkbox("Visa endast Kardiologens anställda")
 
 # Fetch author data from the database
 c.execute("SELECT Authors FROM studies")
@@ -255,7 +255,7 @@ st.plotly_chart(fig_author_publications)
 st.subheader("Antal citeringar per författare")
 
 # Checkbox to apply filter
-apply_filter = st.checkbox("Visa endast Kardiologen för citeringar")
+apply_filter = st.checkbox("Visa endast Kardiologens anställda")
 
 # Fetch author data along with citation counts from the database
 c.execute("SELECT Authors, Citation_Count FROM studies")
@@ -313,8 +313,8 @@ author_data = c.fetchall()
 all_authors = set([author for authors_str in author_data for author in authors_str[0].split(", ")])
 
 # Streamlit dropdown for selecting an author
-selected_author = st.selectbox("Select an Author (leave blank for all)", [""] + sorted(all_authors))
-
+selected_author = st.selectbox("Välj en forskare (lämna tomt för att se alla)", [""] + sorted(all_authors))
+st.write("Här kan du se hur forskarna samarbetar med varandra internet och externt. Röda cirklar är Kardiologens anställda. Blå cirklar är externa forskare.")
 # Create the network graph based on the selected author
 G = create_author_network_graph(author_data, selected_author if selected_author else None)
 
