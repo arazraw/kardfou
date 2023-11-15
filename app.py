@@ -12,14 +12,6 @@ from requests import get
 # Settings ========================================
 
 # Add custom CSS to hide the GitHub icon
-hide_streamlit_style = """
-            <style>
-            [data-testid="stToolbar"] {visibility: hidden !important;}
-            footer {visibility: hidden !important;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
