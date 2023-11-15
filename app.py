@@ -11,6 +11,9 @@ from requests import get
 
 # Settings ========================================
 
+st.set_page_config(layout="wide")
+
+
 # Add custom CSS to hide the GitHub icon
 hide_menu_style = """
         <style>
@@ -19,7 +22,6 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
-st.set_page_config(layout="wide")
 
 # List of substrings to include in some plots
 included_substrings = ["Araz", "Redfors", "Hjalmarsson", "Skoglund", "Truls", "Bergh", "Ljungman",
