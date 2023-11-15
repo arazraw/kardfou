@@ -12,23 +12,20 @@ from requests import get
 # Settings ========================================
 
 # Add custom CSS to hide the GitHub icon
-st.markdown(
-"""
-<style>
-#GithubIcon {
-    visibility: hidden;
-}
-#MainMenu {
-    visibility: hidden;
-}
-#footer {
-    visibility: hidden;
-}
-</style>
-""",
-    unsafe_allow_html=True
-)
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 st.set_page_config(layout="wide")
 
