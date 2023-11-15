@@ -1,0 +1,14 @@
+# .streamlit/config.toml
+
+[theme]
+# ... your theme settings ...
+
+[server]
+# ... your server settings ...
+
+[browser]
+# Set to false to hide the "Fork this app" button
+gatherUsageStats = false
+
+# Additional settings might be available to control other elements, 
+# but their use might be limited by Streamlit's terms of service.
