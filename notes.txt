@@ -1,0 +1,8 @@
+e7dce73f-7ffd-48a6-95c9-7b1403e07d0a 
+
+from requests import get
+
+API_CALL = "https://opencitations.net/api/v1/metadata/10.1108/jd-12-2013-0166"
+HTTP_HEADERS = {"authorization": "YOUR-OPENCITATIONS-ACCESS-TOKEN"}
+
+get(API_CALL, headers=HTTP_HEADERS)
