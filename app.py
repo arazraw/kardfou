@@ -13,16 +13,19 @@ from requests import get
 
 # Add custom CSS to hide the GitHub icon
 st.markdown(
-    """
-    <style>
+"""
+<style>
 #GithubIcon {
-  visibility: hidden;
+    visibility: hidden;
 }
 #MainMenu {
-  visibility: hidden;
+    visibility: hidden;
+}
+#footer {
+    visibility: hidden;
 }
 </style>
-    """,
+""",
     unsafe_allow_html=True
 )
 
