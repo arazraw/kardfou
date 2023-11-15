@@ -18,6 +18,7 @@ st.set_page_config(layout="wide")
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
+        #GithubIcon {visibility: hidden;}
         footer {visibility: hidden;}
         </style>
         """
