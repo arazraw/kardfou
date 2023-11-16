@@ -343,10 +343,9 @@ st.plotly_chart(fig)
 
 
 
-
-
 # Author Network Graph =============================================
 # Define colors for matching and non-matching authors
+st.subheader("Forskarnätverk")
 match_color = 'rgb(255, 0, 0)'  # Red for matching authors
 non_match_color = 'rgb(0, 0, 255)'  # Blue for non-matching authors
 
