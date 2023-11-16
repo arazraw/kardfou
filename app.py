@@ -299,6 +299,47 @@ st.plotly_chart(fig_author_citations)
 
 
 
+# Trender ========================================
+df_articles = pd.read_sql_query("SELECT * FROM studies", conn)
+
+import plotly.graph_objs as go
+from plotly.subplots import make_subplots
+
+# Aggregate data
+yearly_data = df_articles.groupby('Year').agg(
+    Publications=pd.NamedAgg(column="Title", aggfunc="count"),  # Counting the number of publications per year
+    Citations=pd.NamedAgg(column="Citation_Count", aggfunc="sum")    # Summing the citations per year
+).reset_index()
+
+# Create subplots: use 'secondary_y' for the second y-axis (citations)
+fig = make_subplots(specs=[[{"secondary_y": True}]])
+
+# Add bar chart for publications
+fig.add_trace(
+    go.Bar(x=yearly_data['Year'], y=yearly_data['Publications'], name="Publikationer"),
+    secondary_y=False,
+)
+
+# Add line chart for citations
+fig.add_trace(
+    go.Scatter(x=yearly_data['Year'], y=yearly_data['Citations'], name="Citeringar", mode='lines+markers'),
+    secondary_y=True,
+)
+
+# Add figure title
+fig.update_layout(
+    title_text="Trender i publikationer och citat"
+)
+
+# Set x-axis title
+fig.update_xaxes(title_text="Year")
+
+# Set y-axes titles
+fig.update_yaxes(title_text="Antal publikationer", secondary_y=False)
+fig.update_yaxes(title_text="Genererade citat", secondary_y=True)
+
+# Show the figure
+st.plotly_chart(fig)
 
 
 
@@ -394,9 +435,6 @@ fig = go.Figure(
 
 # Display the graph
 st.plotly_chart(fig)
-
-
-
 
 
 
