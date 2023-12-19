@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
+import sqlite3
+
 
 # Colors
 purple_color = '#8470FF'
@@ -13,8 +15,16 @@ st.set_page_config(page_title="VO Kardiologi - Handledning & Undervisning")
 st.title ("Handledning & Undervisning på VO Kardiologi")
 st.header ("Handledning & Undervisning på VO Kardiologi")
 
-import sqlite3
-
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        #GithubIcon {visibility: hidden;}
+        footer {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+        
 def insert_data(data):
     conn = sqlite3.connect('teaching.db')
     cursor = conn.cursor()
