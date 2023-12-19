@@ -8,7 +8,6 @@ st.write("Rapporten är en sammanställning av forskning, handledning och underv
 st.write("---")
 st.write("Verksamhetschef: Kristofer Skoglund (kristofer.skoglund@vgregion.se)")
 st.write("Utveckling av applikationen: Araz Rawshani  (araz.rawshani@vgregion.se)")
-st.write("---")
 st.subheader("Kardiologens FOU-Råd")
 st.write("""
          Kristofer Skoglund, Araz Rawshani, Gustav Smith, Annika Odell, Sofie Andréen, Oskar Angerås,\n
