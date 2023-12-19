@@ -1,6 +1,17 @@
 import streamlit as st
 
 st.set_page_config(page_title="VO Kardiologi")
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        #GithubIcon {visibility: hidden;}
+        footer {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 
 st.title ("FOU Rapport - VO Kardiologi")
 st.header ("Om rapporten")

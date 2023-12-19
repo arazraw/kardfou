@@ -24,7 +24,8 @@ hide_menu_style = """
         header {visibility: hidden;}
         </style>
         """
-        
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 def insert_data(data):
     conn = sqlite3.connect('teaching.db')
     cursor = conn.cursor()
