@@ -18,7 +18,7 @@ st.header ("Om rapporten")
 st.write("Rapporten är en sammanställning av forskning, handledning och undervisning på VO Kardiologi. Den innehåller information från alla år, med möjlighet att filtrera på år och forskare. Rapportens källkod finns att tillgå.")
 st.write("---")
 st.write("Verksamhetschef: Kristofer Skoglund (kristofer.skoglund@vgregion.se)")
-st.write("Utveckling av applikationen: Araz Rawshani  (araz.rawshani@vgregion.se)")
+st.write("Information om applikationen: Araz Rawshani (araz.rawshani@vgregion.se)")
 st.subheader("Kardiologens FOU-Råd")
 st.write("""
          Kristofer Skoglund, Araz Rawshani, Gustav Smith, Annika Odell, Sofie Andréen, Oskar Angerås,\n

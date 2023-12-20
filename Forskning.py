@@ -56,7 +56,7 @@ light_blue_color = '#90D2DC'
 # List of substrings to include in some plots
 included_substrings = ["Araz Rawshani", "Dan Ioanes", "Redfors", "Hjalmarsson", "Skoglund", "Truls", "Bergh", "Ljungman",
                        "Bergfeldt", "Bert Andersson", "Bollano", "Omerovic", "Petur Petursson", "Oskar Angerås", "Oscar Angerås", "Oskar Angeras", "Oscar Angeras",
-                       "Sebastian", "Dworeck", "Sigurjonsdottir", "Lachonius", "Sara Bentzel", "Kristjan Karason", "Emanuele Bobbio",
+                       "Sebastian Völz", "Sebastian Volz", "Dworeck", "Sigurjonsdottir", "Lachonius", "Sara Bentzel", "Kristjan Karason", "Emanuele Bobbio",
                        "Stefano Romeo", "Jakob Odensted", "Karl-Jonas Axelsson", "Pia Dahlberg", "Antros Louca", "Mohammed Munir",
                        "Charlotta Ljungman", "Sofie Andréen", "Annika Odell", "Gustav Smith"]
 
