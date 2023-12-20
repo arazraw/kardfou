@@ -125,8 +125,8 @@ with st.sidebar.form(key='researcher_form'):
     handledning_utbildning = 1 if st.checkbox("Handledning i forskarutbildning") else 0
     use_prom = 1 if st.checkbox("Använder PROM") else 0
     use_prom_examples = st.text_area("Exempel på PROM")
-    password = st.text_input('Password', type='password')
-    submit_button = st.form_submit_button("Skicka")
+    password = st.text_input('Lösenord', type='password')
+    submit_button = st.form_submit_button("Spara")
 
 
 if submit_button:
