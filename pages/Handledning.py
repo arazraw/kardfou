@@ -4,15 +4,10 @@ import os
 import matplotlib.pyplot as plt
 import sqlite3
 
-
-# Colors
-purple_color = '#8470FF'
-yellow_color = 'rgb(255, 215, 0)' #FFD700
-dark_yellow_color = 'rgb(255, 215, 0)'
-light_blue_color = '#90D2DC'
-
-st.set_page_config(page_title="VO Kardiologi - Handledning & Undervisning")
+st.set_page_config(page_title="VO Kardiologi - Handledning & Undervisning", page_icon="favicon.ico",)
 st.title ("Handledning & Undervisning på VO Kardiologi")
+
+st.image("logo.png", width=250)
 st.header ("Handledning & Undervisning på VO Kardiologi")
 
 hide_menu_style = """
@@ -26,6 +21,17 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
+
+# FUNCTIONS AND CONSTANTS ======================================================
+secret_value = st.secrets["admin_pw"]
+
+# Colors
+purple_color = '#8470FF'
+yellow_color = 'rgb(255, 215, 0)' #FFD700
+dark_yellow_color = 'rgb(255, 215, 0)'
+light_blue_color = '#90D2DC'
+
+# Insert data in sqlite database
 def insert_data(data):
     conn = sqlite3.connect('teaching.db')
     cursor = conn.cursor()
@@ -124,7 +130,7 @@ with st.sidebar.form(key='researcher_form'):
 
 
 if submit_button:
-    if password == "correct":
+    if password == secret_value:
         # Collecting form data
         new_data = {
             "email": email, 
@@ -219,7 +225,7 @@ delete_password = st.text_input('Lösenord', type='password')
 delete_button = st.button("Ta bort rad")
 
 if delete_button:
-    if delete_password == "correct":
+    if delete_password == secret_value:
         # Check if the email exists in the DataFrame
         if delete_email in df['email'].values:
             # Delete the row from the database
