@@ -4,13 +4,13 @@ import time
 def search_pubmed(author, start_year, end_year):
     # Set your email here
     Entrez.email = "araz.rawshani@gu.se"
-    #Entrez.api_key = "abcdef012"
 
     # Define search query with date range
-    query = f'"{author}"[Author] AND ("{start_year}/01/01"[Date - Publication] : "{end_year}/12/31"[Date - Publication])'
+    #query = f'"{author}"[Author] AND ("{start_year}/01/01"[Date - Publication] : "{end_year}/12/31"[Date - Publication])'
+    query = f'"{author}"[Author]'
 
     # Perform the search
-    handle = Entrez.esearch(db="pubmed", term=query, retmax=400)
+    handle = Entrez.esearch(db="pubmed", term=query, retmax=500)
     record = Entrez.read(handle)
     handle.close()
 
@@ -25,7 +25,7 @@ def search_pubmed(author, start_year, end_year):
 # Sven-Erik: 
 
 
-author = "Ravn-Fischer, Annica"
+author = "Pirazzi, Carlo"
 start_year = 1990
 end_year = 2023
 pmids = search_pubmed(author, start_year, end_year)
