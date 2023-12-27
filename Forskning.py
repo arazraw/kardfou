@@ -4,7 +4,7 @@ import streamlit as st
 import sqlite3
 from pymed import PubMed
 import pandas as pd
-from st_aggrid import AgGrid, GridOptionsBuilder#, GridUpdateMode, DataReturnMode
+from st_aggrid import AgGrid, GridOptionsBuilder
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 import plotly.express as px
@@ -23,9 +23,6 @@ st.set_page_config(layout="wide",
 
 
 # Custom CSS
-# #MainMenu {visibility: hidden;}
-# header {visibility: hidden;}
-# #GithubIcon {visibility: hidden;}
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
