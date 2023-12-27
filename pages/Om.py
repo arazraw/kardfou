@@ -12,7 +12,7 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
-st.image("logo.png", width=250)
+st.image("logo.png", width=180)
 st.title ("FOU Rapport - VO Kardiologi")
 st.header ("Om rapporten")
 st.write("Rapporten är en sammanställning av forskning, handledning och undervisning på VO Kardiologi. Den innehåller information från alla år, med möjlighet att filtrera på år och forskare. Rapportens källkod finns att tillgå.")

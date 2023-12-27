@@ -5,10 +5,9 @@ import matplotlib.pyplot as plt
 import sqlite3
 
 st.set_page_config(page_title="VO Kardiologi - Handledning & Undervisning", page_icon="favicon.ico",)
-st.title ("Handledning & Undervisning på VO Kardiologi")
 
-st.image("logo.png", width=250)
-st.header ("Handledning & Undervisning på VO Kardiologi")
+st.image("logo.png", width=180)
+st.title ("Handledning & Undervisning på VO Kardiologi")
 
 hide_menu_style = """
         <style>

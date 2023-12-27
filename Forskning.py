@@ -15,26 +15,30 @@ import networkx as nx
 # Settings ======================================================
 secret_value = st.secrets["admin_pw"]
 
+
 # Page config
 st.set_page_config(layout="wide",
                    page_icon="favicon.ico",
                    page_title="VO Kardiologi - FOU & ALF Rapport")
 
+
 # Custom CSS
+# #MainMenu {visibility: hidden;}
+# header {visibility: hidden;}
+# #GithubIcon {visibility: hidden;}
 hide_menu_style = """
         <style>
-        #MainMenu {visibility: hidden;}
-        #GithubIcon {visibility: hidden;}
+        
         footer {visibility: hidden;}
         footer {visibility: hidden;}
-        header {visibility: hidden;}
+        
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 
 # Current page setup ======================================================
-st.image("logo.png", width=250)
+st.image("logo.png", width=180)
 st.title ("FOU & ALF Rapport VO Kardiologi")
 st.subheader("Sahlgrenska Universitetssjukhuset")
 st.write('Välkommen till Kardiologens FOU & ALF rapport. Här kan du registrera artiklar och se statistik över dessa. Du kan även se en graf över hur författarna samarbetar med varandra internet och externt. Du kan även registrera utbildnings- och handledningsaktiviteter.')
