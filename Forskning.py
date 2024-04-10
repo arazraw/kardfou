@@ -60,7 +60,11 @@ included_substrings = ["Araz Rawshani", "Dan Ioanes", "Redfors", "Hjalmarsson", 
                        "Bergfeldt", "Bert Andersson", "Bollano", "Omerovic", "Petur Petursson", "Oskar Angerås", "Oscar Angerås", "Oskar Angeras", "Oscar Angeras",
                        "Sebastian Völz", "Sebastian Volz", "Dworeck", "Sigurjonsdottir", "Lachonius", "Sara Bentzel", "Kristjan Karason", "Emanuele Bobbio",
                        "Stefano Romeo", "Jakob Odensted", "Karl-Jonas Axelsson", "Pia Dahlberg", "Antros Louca", "Mohammed Munir",
-                       "Charlotta Ljungman", "Sofie Andréen", "Annika Odell", "Gustav Smith"]
+                       "Charlotta Ljungman", "Sofie Andréen", "Annika Odell", "Gustav Smith",
+                       "Maria Wideqvist", "Moner Abu Al Chay", "Matilda Frisk Torell", "Mirza Novo",
+                       "Sandeep Jha", "Inger Valeljung", "Tomas Mellberg", "Marie Björkenstam",
+                       "Sven-Erik Bartfay", "Charlotte Backelin", "Andreas Martinsson", "Amar Taha",
+                       "Orsolya Bene", "Farzad Vahedi", "Aigars Rubulis", "Csaba Herczku", "Entela Bollano",]
 
 
 # Function to fetch citation data from OpenCitations

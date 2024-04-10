@@ -196,20 +196,20 @@ if not df.empty:
     plt.xticks(rotation=45)
     st.pyplot(fig)
 
-    st.markdown("---")
+    #st.markdown("---")
     # Create the histogram
-    fig, ax = plt.subplots()
-    ax.hist(df['percentage_research'], bins=range(0, 101, 10), color=purple_color)
-    ax.set_xlabel('Andel forskning')
-    ax.set_ylabel('Antal anställda')
-    ax.set_title('Forskning (%) som del av anställning')
+    #fig, ax = plt.subplots()
+    #ax.hist(df['percentage_research'], bins=range(0, 101, 10), color=purple_color)
+    #ax.set_xlabel('Andel forskning')
+    #ax.set_ylabel('Antal anställda')
+    #ax.set_title('Forskning (%) som del av anställning')
 
     # Display the Histogram in Streamlit
-    st.pyplot(fig)
+    #st.pyplot(fig)
 
-    st.markdown("---")
-    st.subheader("Rådata")
-    st.dataframe(df)
+    #st.markdown("---")
+    #st.subheader("Rådata")
+    #st.dataframe(df)
 else:
     st.warning("Ingen data hittades.")
 

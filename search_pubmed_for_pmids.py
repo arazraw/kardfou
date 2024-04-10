@@ -24,8 +24,7 @@ def search_pubmed(author, start_year, end_year):
 
 # Sven-Erik: 
 
-
-author = "Pirazzi, Carlo"
+author = "Bergh, Niklas"
 start_year = 1990
 end_year = 2023
 pmids = search_pubmed(author, start_year, end_year)

@@ -21,10 +21,10 @@ st.write("Verksamhetschef: Kristofer Skoglund (kristofer.skoglund@vgregion.se)")
 st.write("Information om applikationen: Araz Rawshani (araz.rawshani@vgregion.se)")
 st.subheader("Kardiologens FOU-Råd")
 st.write("""
-         Kristofer Skoglund, Araz Rawshani, Gustav Smith, Annika Odell, Sofie Andréen, Oskar Angerås,\n
-         Annica Ravn-Fischer, Entela Bollano, Elmir Omerovic, Björn Redfors, Runa Sigurjonsdottir,\n
+         Kristofer Skoglund, Araz Rawshani, Gustav Smith, Annika Odell, Sofie Andréen,\n
+         Oskar Angerås, Entela Bollano, Annica Ravn-Fischer, Elmir Omerovic, Björn Redfors,\n
          Clara Hjalmarsson, Charlotta Ljungman, Stefano Romeo, Pia Dahlberg,\n
-         Bert Andersson, Lennart Bergfeldt
+         Bert Andersson, Lennart Bergfeldt, Runa Sigurjonsdottir,
          """)
 
 # Link to website of ALF Västra Götaland (https://www.alfvastragotaland.se/)
